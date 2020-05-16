@@ -1,6 +1,7 @@
 <template>
   <div class="page">
     <the-header />
+    <main class="page__main"></main>
   </div>
 </template>
 
