@@ -1,6 +1,9 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+
 @import "other/variables";
 @import "other/global";
 @import "other/mixins";
 @import "other/fonts";
 
 @import "blocks/page";
+@import "blocks/main-header";

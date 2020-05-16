@@ -1,0 +1,12 @@
+.main-header {
+  min-height: 100px;
+  padding-top: $size-x7;
+  background-color: $bg-black;
+
+  &__container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

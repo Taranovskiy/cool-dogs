@@ -1,3 +1,24 @@
 // main fonts
 $regular: ibm-plex-regular, sans-serif;
 $semibold: ibm-plex-semibold, sans-serif;
+
+// colors
+
+// background colors
+$bg-black:  #151419;
+
+// colors
+$white: #FFFFFF;
+$gray: #626262;
+
+// size
+$main-size: 5px;
+$size-x2: calc(#{$main-size} * 2);
+$size-x3: calc(#{$main-size} * 3);
+$size-x4: calc(#{$main-size} * 4);
+$size-x5: calc(#{$main-size} * 5);
+$size-x6: calc(#{$main-size} * 6);
+$size-x7: calc(#{$main-size} * 7);
+$size-x8: calc(#{$main-size} * 8);
+$size-x9: calc(#{$main-size} * 9);
+$size-x10: calc(#{$main-size} * 10);
