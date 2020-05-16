@@ -5,3 +5,27 @@
   padding-left: calc(#{$main-size * 12});
   padding-right: calc(#{$main-size * 12});
 }
+
+@mixin a-reset {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin link($color: $gray) {
+  &:hover {
+    color: lighten($color, 20%);
+  }
+
+  &:focus {
+    border-bottom: 1px solid $color;
+  }
+}
+
+@mixin no-select {
+  user-select: none;
+  pointer-events: none;
+
+  &:focus {
+    border-bottom: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.favorites-link {
+  @include a-reset;
+  @include link;
+  font-size: 16px;
+  line-height: 28px;
+  color: $gray;
+
+  &__icon {
+    margin-left: $size-x2;
+    fill: $gray;
+    transform: translateY(2px);
+  }
+
+  &:hover &__icon {
+    fill: lighten($gray, 20%);
+  }
+
+  &--active {
+    @include no-select;
+    color: $white;
+  }
+
+  &--active &__icon {
+    fill: $white;
+  }
+}
