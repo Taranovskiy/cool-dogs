@@ -15,11 +15,6 @@
     fill: lighten($gray, 20%);
   }
 
-  &--active {
-    @include no-select;
-    color: $white;
-  }
-
   &--active &__icon {
     fill: $white;
   }

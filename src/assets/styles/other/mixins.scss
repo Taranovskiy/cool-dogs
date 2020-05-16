@@ -11,13 +11,18 @@
   color: inherit;
 }
 
-@mixin link($color: $gray) {
+@mixin link($color: $gray, $active-color: $white) {
   &:hover {
     color: lighten($color, 20%);
   }
 
   &:focus {
     border-bottom: 1px solid $color;
+  }
+
+  &--active {
+    @include no-select;
+    color: $active-color;
   }
 }
 

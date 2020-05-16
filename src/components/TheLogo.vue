@@ -1,7 +1,12 @@
 <template>
-  <div class="logo">
+  <router-link
+    :to="{ name: 'home' }"
+    class="logo"
+    active-class="logo--active"
+    exact
+  >
     <logo-icon />
-  </div>
+  </router-link>
 </template>
 
 <script>
