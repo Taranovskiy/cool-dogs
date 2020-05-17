@@ -11,17 +11,21 @@
   color: inherit;
 }
 
-@mixin link($color: $gray, $active-color: $white) {
-  &:hover {
-    color: lighten($color, 20%);
-  }
+@mixin link($color: $gray, $active-color: $white, $amount: 30%) {
+  position: relative;
+  transition: color $A;
 
+  &:hover,
   &:focus {
-    border-bottom: 1px solid $color;
+    color: lighten($color, $amount);
   }
 
   &--active {
     @include no-select;
+    color: $active-color;
+  }
+
+  &--active:focus {
     color: $active-color;
   }
 }
@@ -29,8 +33,19 @@
 @mixin no-select {
   user-select: none;
   pointer-events: none;
+}
 
-  &:focus {
-    border-bottom: 0;
-  }
+@mixin button-reset {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+@mixin list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }

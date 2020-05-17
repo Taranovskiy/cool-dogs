@@ -1,0 +1,39 @@
+.nav-list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: $size-x6;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    margin-right: $size-x3;
+    margin-top: calc(#{$size-x3} + 2px);
+
+    &--all {
+      flex-basis: 100%;
+      margin-top: 0;
+    }
+
+    &--last {
+      margin-right: $size-x8;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+
+  &__item-letter {
+    margin-right: $size-x3;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $gray;
+  }
+
+  &__item:nth-child(2) &__item-letter {
+    margin-left: 0;
+  }
+}

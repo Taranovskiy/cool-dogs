@@ -1,0 +1,22 @@
+.main-nav {
+  @include container;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__body {
+    margin-right: calc(-1 * #{$size-x3});
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__current {
+    margin-left: $size-x4;
+  }
+}

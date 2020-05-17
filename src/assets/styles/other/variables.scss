@@ -2,8 +2,6 @@
 $regular: ibm-plex-regular, sans-serif;
 $semibold: ibm-plex-semibold, sans-serif;
 
-// colors
-
 // background colors
 $bg-main: linear-gradient(180deg, #1B1A1F 0%, #111013 99.09%);
 $bg-black:  #151419;
@@ -24,3 +22,9 @@ $size-x7: calc(#{$main-size} * 7);
 $size-x8: calc(#{$main-size} * 8);
 $size-x9: calc(#{$main-size} * 9);
 $size-x10: calc(#{$main-size} * 10);
+
+// font-size
+$main-font-size: 16px;
+
+// transition time
+$A: 0.3s;

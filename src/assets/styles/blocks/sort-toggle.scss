@@ -1,0 +1,52 @@
+.sort-toggle {
+  @include button-reset;
+  @include link;
+  display: flex;
+  align-items: center;
+  line-height: $size-x4;
+  color: $gray;
+
+  &__control {
+    position: relative;
+    width: 29px;
+    height: 15px;
+    margin-left: $size-x3;
+    border: 1px solid $gray;
+    border-radius: 7px;
+    transform: translateY(2px);
+    transition: border-color $A;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 3px;
+      right: auto;
+      width: 9px;
+      height: 9px;
+      margin: auto;
+      background-color: $gray;
+      border-radius: 50%;
+      transition: transform $A, background-color $A;
+    }
+  }
+
+  &--on {
+    color: $white;
+  }
+
+  &--on:focus,
+  &--on:hover {
+    color: $white;
+  }
+
+  &--on &__control {
+    border-color: $white;
+
+    &::before {
+      background-color: $white;
+      transform: translateX(12px);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.nav-item {
+  @include a-reset;
+  @include button-reset;
+  @include link($gray, $blue);
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 11px;
+  font-size: 12px;
+  border: 1px solid $gray;
+  border-radius: 12px;
+  color: $gray;
+  transition: border-color $A, color $A;
+  line-height: 16px;
+
+  &--active,
+  &--current {
+    border-color: $blue;
+  }
+
+  &--current {
+    @include link($blue, $blue, 0);
+    color: $blue;
+  }
+
+  &--current &__close-icon {
+    margin-left: 7px;
+    fill: $blue;
+    transform: translateY(1px);
+  }
+}

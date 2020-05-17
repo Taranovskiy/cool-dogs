@@ -9,6 +9,7 @@
     margin-left: $size-x2;
     fill: $gray;
     transform: translateY(2px);
+    transition: color $A;
   }
 
   &:hover &__icon {
