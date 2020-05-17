@@ -1,0 +1,9 @@
+.favorites-button {
+  @include button-reset;
+
+  &__icon {
+    width: 29px;
+    height: 26px;
+    fill: $white;
+  }
+}

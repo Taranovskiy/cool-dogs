@@ -6,6 +6,8 @@
   color: $gray;
 
   &__icon {
+    width: 16px;
+    height: 14px;
     margin-left: $size-x2;
     fill: $gray;
     transform: translateY(2px);

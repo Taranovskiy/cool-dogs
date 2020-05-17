@@ -12,4 +12,8 @@
   &__nav {
     margin-bottom: $size-x10;
   }
+
+  &__photos-list {
+    @include container;
+  }
 }

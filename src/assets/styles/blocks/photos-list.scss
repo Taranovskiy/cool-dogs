@@ -1,0 +1,19 @@
+.photos-list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  &__item {
+    height: 290px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &--big {
+      height: 513px;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+  }
+}

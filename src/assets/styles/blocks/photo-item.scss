@@ -1,0 +1,34 @@
+.photo-item {
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+  }
+
+  &__caption {
+    position: absolute;
+    right: $size-x5;
+    bottom: $size-x5;
+    font-family: $semibold;
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  &__favorites-button {
+    position: absolute;
+    top: $size-x5;
+    left: $size-x5;
+  }
+
+  &--big &__img {
+    height: 513px;
+  }
+
+  &--big &__caption {
+    font-size: 30px;
+    right: $size-x10;
+    bottom: $size-x10;
+  }
+}

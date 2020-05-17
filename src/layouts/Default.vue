@@ -7,6 +7,7 @@
       <div class="page__nav">
         <the-nav />
       </div>
+      <slot />
     </main>
   </div>
 </template>
